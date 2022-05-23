@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins';
+    background: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+ul.social{
+    list-style: none;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+ul li{
+    margin: 10px 0;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+}
+ul li a span:nth-child(2){
+    background: #1877f2;
+    width: 60px;
+    height: 100%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+}
+ul li a span:nth-child(1){
+    width: 0;
+    height: 100%;
+    background: #1877f2;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 0;
+    letter-spacing: 2px;
+    overflow: hidden;
+    margin-right: 5px;
+    border-radius: 0 50px 50px 0;
+    transition: 0.3s ease;
+}
+ul li a:hover span:nth-child(1){
+    width: 180px;
+    padding-left: 20px;
+}
+/* instagram */
+ul li:nth-child(2) a span:nth-child(1),
+ul li:nth-child(2) a span:nth-child(2){
+    background: #e4405f;
+}
+/* twitter */
+ul li:nth-child(3) a span:nth-child(1),
+ul li:nth-child(3) a span:nth-child(2){
+    background: #1da1f2;
+}
+/* GitHub */
+ul li:nth-child(4) a span:nth-child(1),
+ul li:nth-child(4) a span:nth-child(2){
+    background: #171515;
+}
+/* Linkedin */
+ul li:nth-child(5) a span:nth-child(1),
+ul li:nth-child(5) a span:nth-child(2){
+    background: #0a66c2;
+}
